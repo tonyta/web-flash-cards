@@ -4,3 +4,7 @@ get '/decks/:deck_id/cards/:card_num' do
   @card = @deck.cards[ @card_num - 1 ]
   erb :'cards/show'
 end
+
+post '/cards/otherside' do
+  p params
+end
