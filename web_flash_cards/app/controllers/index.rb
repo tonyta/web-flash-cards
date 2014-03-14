@@ -1,3 +1,9 @@
+#Generic Welcome Screen (with login)
 get '/' do
-  # Look in app/views/index.erb
+
+end
+
+post '/' do
+  @user_info = params
+  erb :'login'
 end

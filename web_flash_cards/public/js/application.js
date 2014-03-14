@@ -1,7 +1,11 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
-
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  $('button').on("click", function() {
+    $.get('/decks/:deck_id/cards/:card_num', , function() {
+      if ($("#id"..front")) {
+        $('#card').text("<%= @deck.cards[@card_num].back %>")
+      } else {
+        $('#card').text("<%= @deck.cards[@card_num].front %>")
+      }
+    })
+  })
 });
